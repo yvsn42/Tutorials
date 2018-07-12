@@ -1,6 +1,6 @@
 # Meet Your New Best Friend: ___Git___
 
-![Git Logo](https://git-scm.com/images/logos/downloads/Git-Logo-2Color.png)
+![Git Logo](https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png)
 
 ## What is it?
 Git is a Distributed Version Control System (DVCS).
