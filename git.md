@@ -104,4 +104,8 @@ is a Stack Overflow post that explains the difference
 ### `git worktree`
 - manage multiple working trees
 
-## Other Git Resources/References
+## Other Great Git Resources/References
+
+* [Github's Git Cheatsheet](https://services.github.com/on-demand/downloads/github-git-cheat-sheet.pdf)
+* [Getting Started with Git](https://git-scm.com/book/en/v2/Getting-Started-Git-Basics)
+* [Practical Introduction to Git](https://codeburst.io/git-good-part-a-e0d826286a2a)
