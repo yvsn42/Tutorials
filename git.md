@@ -21,7 +21,7 @@ Once you've fixed the bug, you can simply merge your branch with the master bran
 
 Another reason to use git is the ability to gain faster release cycles for your
 piece of software. As you use git, you will start to notice that it facilitates
-the [Agile Workflow](https://www.smartsheet.com/understanding-agile-software-development-lifecycle-and-process-workflow)
+the [Agile Workflow](https://www.smartsheet.com/understanding-agile-software-development-lifecycle-and-process-workflow).
 
 > The problem with Git jokes is that everyone has their own version.
 
