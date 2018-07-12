@@ -1,4 +1,6 @@
-# GIT Tutorial
+# Meet Your New Best Friend: ___Git___
+
+![Git Logo](https://git-scm.com/images/logos/downloads/Git-Logo-2Color.png)
 
 ## What is it?
 Git is a Distributed Version Control System (DVCS).
@@ -7,7 +9,9 @@ bunch of files, and also keep track of other details such as who and when made a
 certain change to a file.
 
 When we say Git is distributed, we mean that every person working on a specific
-project
+project.
+
+> The problem with Git jokes is that everyone has their own version.
 
 ## Cheatsheet
 ### `git init` _[<directory\>]_
@@ -23,7 +27,7 @@ project
 - The standard `rm` will only remove the file locally
 
 ### `git commit`
-- __[-m <message>]__ : Write the commit message on the command line
+- _[-m <message>]_ : Write the commit message on the command line
 - _[-a]_ (Interactive mode)
 - --amend: Change the last commit message
 
