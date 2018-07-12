@@ -15,14 +15,14 @@ project
 - Creates a `.git/` directory inside the repository
 
 ### `git add` _[<filename\>]_
-- stage files to be commited
+- stage files to be committed
 - Shown in `git status` in green
 
 ### `git rm` _[\<filename>]_
 - remove files from the git repository
 - The standard `rm` will only remove the file locally
 
-### `git commit` 
+### `git commit`
 - __[-m <message>]__ : Write the commit message on the command line
 - _[-a]_ (Interactive mode)
 - --amend: Change the last commit message
@@ -38,7 +38,8 @@ project
 - `-u` set upstream
 -  Try `git config --global push.default simple`
     - This way you can just type `git push` and it will only push the branch
-          you are working on (provided that the upstream and local branch names are the same)
+          you are working on (provided that the upstream and local branch names
+			  are the same)
 - `-f --force` Force push
     - Could use this with `git rebase` to change commit history on remote
           [NOT RECOMMENDED]
@@ -48,10 +49,10 @@ project
 - Get a local copy of git repository
 
 #### Differences between forking and cloning
-[Here] is a Stack Overflow post that explains the difference
-[Here]:
-(https://stackoverflow.com/questions/6286571/are-git-forks-actually-git-clones)
-    
+[Here](https://stackoverflow.com/questions/6286571/are-git-forks-actually-git-clones)
+is a Stack Overflow post that explains the difference
+
+
 - Forking is in **GitHub**
     - You can fork a repo into your own [GitHub] account
     - Make changes
@@ -84,8 +85,8 @@ project
 
 ### `git reset`
 - Reset git branch to a previous state
-    - Warning: You will lose any unpushed chnages if you use this
-- `--soft HEAD^`: Unstage last commit
+    - Warning: You will lose any un-pushed changes if you use this
+- `--soft HEAD^`: Un-staged last commit
 
 ### `git config`
 - Set up your git config file
@@ -103,3 +104,4 @@ project
 ### `git worktree`
 - manage multiple working trees
 
+## Other Git Resources/References
