@@ -57,6 +57,13 @@ the [Agile Workflow](https://www.smartsheet.com/understanding-agile-software-dev
 
 [Here]: https://stackoverflow.com/a/2222920
 ## How-To
+
+## Temporarily move back to a previous commit
+- `git checkout <commit hash>` (Detaches head)
+    - I'd recommend working on the changes on another branch
+    - `git checkout -b old_state <commit hash>`
+- To go back: `git checkout <branch>` (The branch you were working on)
+
 ### Make changes to an already committed file (but has not yet been pushed)
 - Use git stash to store the changes you want to add.
 - Use git rebase -i HEAD~n (Which shows the last n commits for you to edit)
@@ -221,6 +228,7 @@ is a Stack Overflow post that explains the difference
 
 - Set up your git config file
 - [Here] is a
+
 ### git fetch
 
 - Fetch updates from remote, but not merge them to local
@@ -233,7 +241,7 @@ is a Stack Overflow post that explains the difference
 
 ### git worktree
 
-- manage multiple working trees
+- Work on more than one branch at once
 
 ## If you thought our Git Tutorial was horrible, here are some actually good resources 
 - [Git for Beginners: The Definitive Practical Guide](https://stackoverflow.com/questions/315911/git-for-beginners-the-definitive-practical-guide#320140)

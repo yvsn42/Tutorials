@@ -13,6 +13,24 @@ set mouse=a
 :cd - Change vim's working directory
 :echo
 
+## Motions
+- h : Left
+- j : Down
+- k : Up
+- l : Right
+- H : Highest [line] on screen
+- M : Middle [line] on screen
+- L : Lowest [line] on screen
+
+- w : Move forward a word
+- b : Move backward a word
+- e : Move forward to the end of the word
+
+## Text Objects
+- iw :
+- it :
+- ip :
+
 ## :expand("%") - Filepath
 
 - '%' - Filepath
