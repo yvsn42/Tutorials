@@ -22,14 +22,32 @@ set mouse=a
 - M : Middle [line] on screen
 - L : Lowest [line] on screen
 
+word (seperated by characters in option `keyword`)
 - w : Move forward a word
 - b : Move backward a word
 - e : Move forward to the end of the word
+- ge : Move backwar to the end of the word
+
+WORD (Only seperated by whitespace)
+- W :
+- B :
+- E :
+- gE :
+- % : Move to matching pair (Parentheses)
+- { : 
+
+- 0 : Move to beginning of line
+- $ : Move to end of line
+- ^ : Move to first non-blank character in line
+
 
 ## Text Objects
-- iw :
-- it :
-- ip :
+- iw : Inner Word
+- it : Inner Tag
+- ip : Inner Paragraph
+- i" :
+- i{ :
+
 
 ## :expand("%") - Filepath
 
