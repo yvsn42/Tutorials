@@ -56,7 +56,9 @@ the [Agile Workflow](https://www.smartsheet.com/understanding-agile-software-dev
 |URL|The location of the repository on the server|
 
 [Here]: https://stackoverflow.com/a/2222920
-## How-To
+
+<!-- TODO: This part could moved into a Gist -->
+## "How to ..." 
 
 ## Temporarily move back to a previous commit
 - `git checkout <commit hash>` (Detaches head)
@@ -243,7 +245,7 @@ is a Stack Overflow post that explains the difference
 
 - Work on more than one branch at once
 
-## If you thought our Git Tutorial was horrible, here are some actually good resources 
+## Better Explained
 - [Git for Beginners: The Definitive Practical Guide](https://stackoverflow.com/questions/315911/git-for-beginners-the-definitive-practical-guide#320140)
 - [Lars Vogel's Git Tutorial](http://www.vogella.com/tutorials/Git/article.html#introduction-into-version-control-systems)
 - [Github's Git Cheatsheet](https://services.github.com/on-demand/downloads/github-git-cheat-sheet.pdf)
