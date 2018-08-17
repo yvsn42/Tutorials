@@ -1,5 +1,7 @@
 #  VIM Tutorial
 
+![Vim Logo](https://upload.wikimedia.org/wikipedia/commons/9/9f/Vimlogo.svg)
+
 ## Tips
 
 ### Map the CapsLock to CTRL
@@ -8,7 +10,7 @@
 Vim is a modal editor, and most of the editing functionality discussed below is
 available in Normal mode. You will be using `<Esc>` a lot, so it might be useful
 to remap the Esc key.
-`set inoremap jk <Esc>`
+`:set inoremap jk <Esc>`
 Running that command allows you exit command with just j+k. Doing this, and
 remapping the CapsLock key allow to keep your fingers on the home row most of the
 time.
@@ -24,7 +26,7 @@ mode useful for doing work when I was still in the process of learning vim.
 It would be better to learn how to use vim without a mouse, but know that this
 option is available in newer versions of vim.
 
-set mouse=a
+:set mouse=a
 - Can scroll
 - Double click to enter visual mode
 - Switch between windows by clicking on them
@@ -33,21 +35,21 @@ set mouse=a
 - You can even select text by holding down the mouse button.
 - Paste with the middle mouse button
 
-> You can't use the mouse to select text to copy/paste to your system keyboard with `set mouse`
+> You can't use the mouse to select text to copy/paste to your system keyboard with `:set mouse`
 
-## set
-`set` is used to assign values to variables used by vim. This is equivalent to
+## :set
+`:set` is used to assign values to variables used by vim. This is equivalent to
 configuring certain options/preferences in the usual text editor
-- Most vim variables are boolean values you set to true or false
+- Most vim variables are boolean values you :set to true or false
     - For example: `:set number` enables line numbers in vim
     - To disable, prepend the variable with 'no'.
-    - `set nonumber` disables line numbering
+    - `:set nonumber` disables line numbering
 - Other vim variables may take a value which you can specify using '='
-    - `set mouse=a`
-    - Use `+=` to add values/options to ones that are already set in the variable
+    - `:set mouse=a`
+    - Use `+=` to add values/options to ones that are already :set in the variable
 
 - To see what value a vim variable already has by appending `?` to the variable
-    - `set mouse?`
+    - `:set mouse?`
 
 :ls - List the path of the file (w.r.t. home directory)
 :cd - Change vim's working directory
@@ -59,7 +61,7 @@ configuring certain options/preferences in the usual text editor
 - Insert (i)
 - Visual (v)
 - Replace (R)
-- Command (:)
+- Command (\:\)
 
 ## Terminal Commands
 - Run Unix commands on vim using `!`
@@ -83,7 +85,7 @@ For example:
     - Yes, that sequence of commands seems a lot, so I'd recommend mapping the
     `:set paste` command to a keyboard shortcut using
         - `:set pastetoggle=<M-v>`
-            - Here I've set the shortcut to Alt+v, which you can toggle inside
+            - Here I've :set the shortcut to Alt+v, which you can toggle inside
               insert mode
 
 
@@ -104,8 +106,8 @@ For example:
 - y  : Yank (copy)
 - d  : Delete
 - c  : Change (Delete and enter into insert mode)
-- >  : Indent right
-- <  : Indent left
+- \>  : Indent right
+- \<  : Indent left
 - gu : Change to lowercase
 - gU : Chnage to uppercase
 - g~ : Swap case
@@ -119,7 +121,7 @@ For example:
 - H : Highest [line] on screen
 - M : Middle [line] on screen
 - L : Lowest [line] on screen
-- f<character> : Move to the next occurence of _character_ 
+- f\<character\> : Move to the next occurence of _character_ 
 - gg : Move to beginning of file
 - G  : Move to the end of file
 
@@ -129,6 +131,7 @@ word (seperated by characters in option `keyword`)
 - e : Move forward to the end of the word
 - ge : Move backward to the end of the word
 
+<!--
 WORD (Only seperated by whitespace)
 - W :
 - B :
@@ -140,6 +143,7 @@ WORD (Only seperated by whitespace)
 - 0 : Move to beginning of line
 - $ : Move to end of line
 - ^ : Move to first non-blank character in line
+-->
 
 ### Object select
 - a : around
@@ -156,7 +160,7 @@ WORD (Only seperated by whitespace)
 Also anything inside the following surrounding elements
 - " "
 - ' '
-- ` `
+- \` \`
 (Note that the following can extend across multiple lines)
 - { }
 - ( )
@@ -171,9 +175,18 @@ Also anything inside the following surrounding elements
 - C-b : Page-up
 - C-f : Page-down
 
+## Folding
+
+## Splits and Tabs
+
+## Persistent Undo and Gundo
+
+## Jumplists
+
 ## Registers
 Vim has a register for every non-modifier key (Letter, Number, or symbol)
 on a typical keyboard
+
 ### Pasting
 
 ### Macros
