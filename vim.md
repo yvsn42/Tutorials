@@ -215,3 +215,7 @@ on a typical keyboard
 
 ## References
 - [Vim Text Objects: The Definitve Guide](https://blog.carbonfive.com/2011/10/17/vim-text-objects-the-definitive-guide/)
+- [How to Learn Vim: A Four Week Plan](https://medium.com/actualize-network/how-to-learn-vim-a-four-week-plan-cd8b376a9b85)
+- [Learning Vim as A Language](https://benmccormick.org/2014/07/02/learning-vim-in-2014-vim-as-language/)
+- [Stop the Vim Configuration Madness](https://medium.com/usevim/stop-the-vim-configuration-madness-c825578bbf3e)
+- [Your problem with Vim is that you don't grok vi](https://stackoverflow.com/a/1220118)
