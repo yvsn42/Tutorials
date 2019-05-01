@@ -198,6 +198,13 @@ on a typical keyboard
 - Run a macro on every occurence of the pattern
     - `g/<pattern>/normal! @<register>`
 
+## Text Objects
+- iw : Inner Word
+- it : Inner Tag
+- ip : Inner Paragraph
+- i" : Inner (Double) Quotes
+- i{ : Inner Brace
+
 ## :expand("%") - Filepath
 
 - '%' - Filepath
