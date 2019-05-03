@@ -3,7 +3,7 @@
 - `<C-X>` means "`CTRL` + Shift + x"
 - `<M-x>` means "`Meta` + x"
     - In Windows, the `Meta` key is the `ALT` Key
-    - In OSX, you need to make the `Option/ALT` key to be the `Meta` Key in your
+    - In MacOS, you need to make the `Option/ALT` key to be the `Meta` Key in your
       terminal
         - Goto Terminal->`Preferences->`Profiles->`Keyboard
         - Select "Use Option as Meta Key"
@@ -28,7 +28,7 @@
 ## Terminal Commandline Shortcuts
 - `<C-e>`: Move to end of command line
 - `<C-a>`: Move to beginning of command line
-- `<C-x>`: Toggle between the beggining and end of line
+- `<C-x>`: Toggle between the beginning and end of line
 - `<M-f>`: Move forward a word
 - `<M-b>`: Move backward a word
 
@@ -49,7 +49,11 @@
 - !`<pattern>`: Run the last command that starts with `<pattern>`
 - When you run `history` you get a list of previously entered commands
     - !`<number>` : To run the command with the number shown next to it by `history`
-- `<C-r>`
+- `<C-r>`: Open _reverse-i-serach_ to search through your bash history
+    - `<C-o>`: Run the searched command
+    - If you have a long command that you use frequently, a good idea would be
+      to add a tag string that you can search for by using '#' after your
+      command
     - `<C-g>` : Abort search (Revert back to original line)
 
 - `<M-x>`: Restore all changes made to the line
