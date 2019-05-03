@@ -1,17 +1,3 @@
----
-title: Intro to Github commands
-author: Shraddha Agrawal
-patat:
-    wrap: true
-    theme:
-      bordrers: [bold, onDullBlack]
-      code: [bold, onVividBlack]
-      strong: [bold, vividRed]
-    margins:
-        left: 10
-        right: 10
----
-
 # Version Control
 
 - Keep track of changes to files
@@ -21,6 +7,12 @@ patat:
 
 - Accountability - Who wrote the code?
 
+# Before you start...
+- Configure git with your name and e-mail address
+```sh
+git config --global user.name "Firstname Lastname"
+git config --global user.email "name@ucdavis.edu"
+```
 # How to create a git repository?
 
 - Create a new repository on GitHub (or GitLab, BitBucket, Gitl, etc.)
@@ -87,9 +79,9 @@ git status
 ```
 
 - Shows a summary of the repo. This includes:
-  - What branch you are on?
-  - What files have been modified?
-  - What files you are about to co
+    - What branch you are on?
+    - What files have been modified?
+    - What files you are about to co
 
 # File States
 - **Untracked**: The file is not being tracked by git. It is in the git worktree but

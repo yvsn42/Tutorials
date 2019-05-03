@@ -1,16 +1,3 @@
----
-title: Intro to the Unix CLI
-author: Nikhil Yerramilli
-patat:
-    theme:
-        syntaxHighlighting:
-            decVal: [bold, onDullRed]
-    wrap: true
-    margins:
-        left: 10
-        right: 10
----
-
 # Unix Command Line
 
 ```bash
@@ -41,9 +28,9 @@ patat:
     * `-`: The directory you were previously in
 - `pwd` - **p**rint working **d**irectory
 - `rm` - **r**e**m**ove file
-    *  `-i`: 
-    *  `-r`:
-    *  `f` :
+    *  `-i`: Ask before removing
+    *  `-r`: Recursively remove directories
+    *  `-f`: Forcefully remove (overrides `-i`) 
 - `mkdir` - **m**a**k**e new **dir**ectory
 - `rmdir` - **r**e**m**ove [empty] **dir**ectory
     - `rm -rf` can be used to delete a non-empty directory (Use at your own risk)
@@ -82,18 +69,12 @@ patat:
   * `<Ctrl-a>`: Move to beginning of command line
   * `<Ctrl-x>`: Toggle between the begining and end of line
 
-. . .
-
   - `<Alt-f>`: Move forward a word
   - `<Alt-b>`: Move backward a word
-
-. . . 
 
   - `<Ctrl-l>`: Clear screen
   - `<Ctrl-w>`: Delete word before the cursor
   - `<Alt-d>`: Delete word after the cursor
-
-. . .
 
   - `<Ctrl-k>`: Delete from cursor to end of line
   - `<Ctrl-u>`: Delete from start of line to cursor
@@ -156,30 +137,49 @@ diff [file1] [file2]
 - Compares files line by line
 - No output indicates that the files are identical
 - Three kinds of changes listed by diff:
-1. Additions
-```
-firstStart a secondStart, secondStop
-> lines from the second file to add to the first file.
-```
- 2. Deletions
-```
- firstStart, firstStop d lineCount
-< lines from the first file to delete.
-```
-3. Changes
-```
-firstStart, firstStop c secondStart, secondStop
-< lines in the first file to be replaced
-----
-> lines in the second file to be used for the replacement
----
-```
+  - Additions
+  ```
+  firstStart a secondStart, secondStop
+  > lines from the second file to add to the first file.
+  ```
+  - Deletions
+  ```
+   firstStart, firstStop d lineCount
+  < lines from the first file to delete.
+  ```
+  - Changes
+  ```
+  firstStart, firstStop c secondStart, secondStop
+  < lines in the first file to be replaced
+  ----
+  > lines in the second file to be used for the replacement
+  ---
+  ```
 
 # `alias`
 - Make alias: `alias [aliasname] [command]`
 - Show alias: `alias [aliasname]`
 - Show all aliases: `alias`
 - Remove alias: `unalias [aliasname]`
+
+# Recommended aliases
+- Add these to `$HOME/.bashrc`
+```bash
+# enable color support of ls and also add handy aliases
+if [ -x /usr/bin/dircolors ]; then
+    alias ls='ls --color=auto'
+    alias grep='grep --color=auto'
+    alias fgrep='fgrep --color=auto'
+    alias egrep='egrep --color=auto'
+fi
+
+# Necessary rm and cp aliases
+alias rm='rm -i'
+alias cp='cp -i'
+# some more ls aliases
+alias ll='ls -lF'
+alias la='ls -A'
+```
 
 # `grep`
 -  To search for a particular pattern in given file(s), run:
